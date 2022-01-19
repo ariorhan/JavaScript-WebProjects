@@ -1,0 +1,31 @@
+h3 {
+    color: rgb(24, 91, 167);
+    font-size: 100px;
+    text-align: center;
+}
+
+#increase {
+    display: flex;  
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 200px;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    background-color: green;
+    margin-bottom: 20px;
+
+}
+
+#decrease {
+    display: flex;  
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 200px;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    background-color: red;
+}
