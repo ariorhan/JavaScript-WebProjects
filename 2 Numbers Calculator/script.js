@@ -8,3 +8,9 @@ addition.onclick = function() {
     results.textContent = add
     console.log(add)
 }
+
+substraction.onclick = function() {
+    let sub = parseInt(number1.value) - parseInt(number2.value)
+    results.textContent = sub
+    console.log(sub)
+}
