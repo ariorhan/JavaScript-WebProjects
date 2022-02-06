@@ -9,8 +9,22 @@ addition.onclick = function() {
     console.log(add)
 }
 
-substraction.onclick = function() {
+subtraction.onclick = function() {
     let sub = parseInt(number1.value) - parseInt(number2.value)
     results.textContent = sub
     console.log(sub)
 }
+
+division.onclick = function() {
+    let div = parseInt(number1.value)/parseInt(number2.value)
+    results.textContent = div
+    console.log(div)
+}
+
+multiply.onclick = function() {
+    let mult = parseInt(number1.value) * parseInt(number2.value)
+    results.textContent = mult
+    console.log(mult)
+}
+
+    
