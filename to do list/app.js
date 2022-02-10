@@ -36,7 +36,7 @@ function addTodo(event) {
     //Clear todo Input Value
     todoInput.value = "";
 }
-
+  
 function deleteCheck(e) {
     const item = e.target;
     //Delete Todo
