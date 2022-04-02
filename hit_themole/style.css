@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 3rem auto;
+    text-align: center;    
+}
+
+header h3 {
+    margin: 3rem 0;
+}
+
+header button {
+    width: 5rem;
+    padding: 1rem 1rem;
+    background-color: coral;
+    color: white;
+    font-weight: 600;
+    font-size:larger ;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: cornflowerblue;
+    transition: all .3s ease;
+}
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.molehill {
+    position: relative;
+    margin: 2rem 0.5rem;
+    margin-top: 5rem;
+    height: 6rem;
+    width: 30%;
+    background-size: cover;
+}
+
+.molehill::after {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("images/molehill.png") center no-repeat;
+    background-size: cover;
+}
+
+.mole {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 5.5rem;
+    width: 100%;
+    background: url("images/mole.png") center no-repeat;
+    background-size: contain;
+    transition: .3s all ease;
+}
+
+.mole.selected {
+    top: -3em;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+    .molehill {
+        position: relative;
+        width: 30%;
+    }
+}
+
+
